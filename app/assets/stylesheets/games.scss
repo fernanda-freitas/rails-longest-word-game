@@ -1,0 +1,29 @@
+.container{
+  max-width: 768px;
+}
+
+.page-title{
+  font-weight: 700;
+  margin-top: 20%;
+}
+
+.letter-container{
+  display: flex;
+
+  .letter-box{
+    display: flex;
+    background-color: cornflowerblue;
+    width: 60px;
+    height: 60px;
+    margin: 0 .5rem;
+    border-radius: .5rem;
+  }
+
+  .letter{
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+}

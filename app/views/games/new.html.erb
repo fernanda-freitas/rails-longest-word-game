@@ -1,0 +1,13 @@
+<h1 class="page-title">New game</h1>
+<div class="letter-container mt-5">
+  <% @letters.each do |letter| %>
+    <div class="letter-box">
+      <span class="letter"><%= letter %></span>
+    </div>
+  <% end %>
+</div>
+<form action="score" class="input-group mt-5">
+  <input type="text" name="word" class="form-control" placeholder="Enter your word">
+  <input class="btn btn-outline-secondary" type="submit" value="Play">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
